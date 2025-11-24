@@ -2,298 +2,269 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>عرض سعر NeuraTalk – العقد لمدة 6 أشهر</title>
+<title>NeuraTalk – العرض الرسمي</title>
+
+<!-- Cairo Font -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
 <style>
     body {
-        font-family: "Cairo", Tahoma, sans-serif;
-        background: #f0f3f8;
+        font-family: "Cairo", sans-serif;
+        background: linear-gradient(140deg, #e8eef7, #f6f9fc, #e7f0ff);
         margin: 0;
-        padding: 25px;
-        line-height: 1.9;
-        direction: rtl;
+        padding: 40px;
+        color: #222;
     }
-    .container {
-        background: #fff;
-        padding: 35px;
+
+    .glass-container {
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background: rgba(255, 255, 255, 0.70);
         border-radius: 18px;
-        max-width: 1050px;
+        border: 1px solid rgba(200, 200, 200, 0.3);
+        padding: 35px;
+        max-width: 1100px;
         margin: auto;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        box-shadow: 0 10px 35px rgba(0,0,0,0.12);
     }
-    h1, h2, h3 {
-        color: #1a4f8b;
-        margin-bottom: 10px;
+
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        color: #1b3c70;
+        margin-bottom: 20px;
+        font-weight: 800;
     }
+
+    h2 {
+        color: #244f94;
+        border-right: 5px solid #244f94;
+        padding-right: 12px;
+        margin-top: 40px;
+    }
+
+    h3 {
+        color: #274d8e;
+        font-weight: 700;
+    }
+
+    .section-card {
+        background: rgba(255,255,255,0.45);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px 25px;
+        margin-top: 20px;
+        border: 1px solid rgba(255,255,255,0.35);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
     table {
         width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
         font-size: 16px;
     }
-    table th {
-        background: #1a4f8b;
+
+    th {
+        background: linear-gradient(120deg, #234a8b, #3b6cb5);
         color: #fff;
-        padding: 12px;
-    }
-    table td {
-        border: 1px solid #ddd;
-        padding: 12px;
-        background: #fafafa;
-    }
-    .highlight {
-        background: #e7f1ff;
-        padding: 18px;
-        border-radius: 10px;
-        margin-top: 20px;
-        border-right: 4px solid #1a4f8b;
-    }
-    .footer {
-        text-align: center;
-        margin-top: 40px;
-        font-size: 15px;
-        color: #555;
+        padding: 14px;
+        font-size: 16px;
     }
 
-    /* Animated Graph Bars */
-    .graph {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-around;
-        margin: 20px 0;
-        height: 230px;
-        padding: 10px;
-        border-left: 3px solid #333;
-        border-bottom: 3px solid #333;
+    td {
+        background: rgba(255,255,255,0.6);
+        padding: 14px;
+        border-bottom: 1px solid #d8d8d8;
     }
+
+    .graph-modern {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 260px;
+        padding: 20px;
+    }
+
     .bar {
-        width: 120px;
-        border-radius: 8px 8px 0 0;
+        width: 140px;
+        border-radius: 14px 14px 0 0;
         color: #fff;
         text-align: center;
-        font-weight: bold;
         display: flex;
         align-items: flex-end;
         justify-content: center;
+        font-weight: bold;
         padding-bottom: 6px;
-        animation: grow 2s ease-in-out forwards;
+        transition: 0.7s ease-out;
     }
-    .bar-human { background: #d9534f; height: 100px; }
-    .bar-bot { background: #5cb85c; height: 100px; }
+
+    .bar-human {
+        height: 210px;
+        background: linear-gradient(180deg, #e63946, #ff6b6b);
+    }
+    .bar-bot {
+        height: 120px;
+        background: linear-gradient(180deg, #2ecc71, #6edc93);
+    }
+
     .graph-label {
+        margin-top: 10px;
         text-align: center;
-        margin-top: 8px;
         font-weight: bold;
         color: #333;
     }
 
-    @keyframes grow {
-        0% { height: 0; }
+    .footer {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 15px;
+        color: #666;
     }
 
 </style>
 </head>
+
 <body>
 
-<div class="container">
+<div class="glass-container">
 
-<h1>NeuraTalk – العرض الرسمي</h1>
+<h1>📄 عرض NeuraTalk الرسمي – لمدة 6 أشهر</h1>
 
+<div class="section-card">
 <p><strong>رقم العرض:</strong> NT-2024-001</p>
 <p><strong>التاريخ:</strong> ٢٥ نوفمبر ٢٠٢٥</p>
 <p><strong>صالح لمدة:</strong> ٧ أيام</p>
-<p><strong>إلى:</strong> سهل للخدمات القنصلية</p>
+<p><strong>العميل:</strong> سهل للخدمات القنصلية</p>
 <p><strong>جهة الاتصال:</strong> أ. مريم</p>
+</div>
 
-<hr>
 
-<h2>نوع الخدمة</h2>
-<p>بناء وتشغيل شات بوت ذكي متعدد المنصات يعمل بالذكاء الاصطناعي، ويقوم بمهام فريق خدمة العملاء بشكل أسرع، أدق، وأكثر كفاءة.</p>
+<h2>الأسعار بعد الخصم</h2>
 
-<hr>
-
-<h2>تفاصيل الأسعار مع الخصم (توصية د.مكين)</h2>
-
+<div class="section-card">
 <table>
 <thead>
 <tr>
 <th>الخدمة</th>
 <th>السعر الأصلي (EGP)</th>
-<th>سعر الخصم (USD / EGP)</th>
-<th>نسبة الخصم</th>
+<th>السعر بعد الخصم (USD / EGP)</th>
+<th>الخصم</th>
 </tr>
 </thead>
-
 <tbody>
+
 <tr>
-<td>البناء والإعداد الكامل (مرة واحدة)</td>
+<td>البناء والإعداد الكامل</td>
 <td>28,800</td>
-<td><strong>$450 / 21,600 EGP</strong></td>
+<td><strong>$450 / 21,600</strong></td>
 <td>25%</td>
 </tr>
 
 <tr>
-<td>التشغيل والصيانة الشهرية – Standard</td>
+<td>التشغيل والصيانة الشهرية</td>
 <td>43,200</td>
-<td><strong>$420 / 20,160 EGP</strong></td>
+<td><strong>$420 / 20,160</strong></td>
 <td>53%</td>
 </tr>
 
 <tr>
 <td><strong>إجمالي الشهر الأول</strong></td>
 <td>72,000</td>
-<td><strong>$870 / 41,760 EGP</strong></td>
+<td><strong>$870 / 41,760</strong></td>
 <td>42%</td>
 </tr>
+
 </tbody>
 </table>
+</div>
 
-<div class="highlight">
-<h3>ما الذي يشمله العرض؟</h3>
-<ul>
-<li>تصميم وبناء شات بوت ذكي كامل</li>
-<li>الربط مع ٥ منصات تواصل (فيسبوك – إنستجرام – واتساب – تيك توك – التعليقات)</li>
-<li>تدريب الذكاء الاصطناعي على جميع الأسئلة والسيناريوهات</li>
-<li>جمع بيانات العملاء بشكل تلقائي</li>
-<li>تحويل المحادثة للموظف عند الحاجة</li>
-<li>تشغيل ٢٤/٧ بدون توقف</li>
-<li>لغتين: عربي وإنجليزي</li>
-<li>دعم وصيانة طوال فترة العقد</li>
+
+<h2>ماذا يشمل العرض؟</h2>
+<div class="section-card">
+<ul style="margin:0;">
+<li>شات بوت ذكي كامل متعدد القنوات</li>
+<li>ربط مع واتساب – إنستجرام – فيسبوك – تيك توك</li>
+<li>ذكاء اصطناعي مخصص للرد على الأسئلة</li>
+<li>تحويل المحادثة للموظفين عند الحاجة</li>
+<li>دعم وصيانة مستمرة</li>
+<li>لغتين: عربي + إنجليزي</li>
+<li>جمع بيانات العملاء تلقائياً</li>
 </ul>
 </div>
 
-<hr>
 
 <h2>الجدول الزمني</h2>
+<div class="section-card">
 <ul>
-<li>مدة التنفيذ: ٣–٤ أسابيع</li>
-<li>الإطلاق التجريبي: خلال أسبوعين</li>
-<li>الإطلاق الكامل: الأسبوع الثالث أو الرابع</li>
+<li>الأسبوع الأول والثاني: إعداد وتهيئة البوت</li>
+<li>الأسبوع الثالث: الإطلاق التجريبي</li>
+<li>الأسبوع الرابع: الإطلاق الكامل + ضبط الأداء</li>
 </ul>
+</div>
 
-<hr>
 
 <h2>شروط الدفع</h2>
+<div class="section-card">
 <ul>
-<li>الدفع شهرياً أو ربع سنوي (٣ أشهر مقدماً)</li>
-<li>دفعة مقدمة عند التوقيع: 750 دولار</li>
+<li>دفعة مقدمة: 750 دولار</li>
 <li>دفعة ثانية عند الإطلاق: 750 دولار</li>
+<li>الدفع شهرياً أو كل ٣ أشهر</li>
 </ul>
+</div>
 
-<hr>
 
-<h2>مدة العقد</h2>
-<p><strong>العقد لمدة ٦ أشهر</strong></p>
-
-<hr>
-
-<h2>الفوائد المالية للعمل مع NeuraTalk</h2>
-<p>اعتماداً على الرواتب، الإيجار، الإنتاجية، والتقصير البشري، تم حساب التكلفة الحقيقية لفريق خدمة العملاء التقليدي:</p>
-
+<h2>تحليل الفائدة المالية</h2>
+<div class="section-card">
 <table>
-<thead>
-<tr>
-<th>البند</th>
-<th>التكلفة الشهرية (EGP)</th>
-</tr>
-</thead>
-
-<tbody>
-<tr><td>رواتب ٥ موظفين (6,000 لكل موظف)</td><td>30,000</td></tr>
-<tr><td>راتب المنسق</td><td>10,000</td></tr>
-<tr><td>إيجار وتجهيزات المكتب</td><td>30,000</td></tr>
-<tr><td>فقد الإنتاجية (استراحات + غياب)</td><td>7,500</td></tr>
-<tr><td>خسارة العملاء بسبب عدم الرد أو المتابعة</td><td>15,000</td></tr>
-
-<tr><td><strong>إجمالي التكلفة الحقيقية</strong></td><td><strong>92,500 EGP</strong></td></tr>
-</tbody>
+<tr><td>تكلفة الفريق التقليدي</td><td><strong>92,500 EGP</strong></td></tr>
+<tr><td>تكلفة NeuraTalk بعد الخصم</td><td><strong>41,760 EGP</strong></td></tr>
+<tr><td>التوفير الشهري</td><td><strong>50,740 EGP</strong></td></tr>
+<tr><td>التوفير خلال ٦ أشهر</td><td><strong style="color:#e63946;">529,440 EGP</strong></td></tr>
 </table>
-
-<h3>الفوائد الشهرية باستخدام NeuraTalk</h3>
-<p><strong>التكلفة بعد الخصم:</strong> 41,760 EGP</p>
-<p><strong>الفائدة الشهرية:</strong> 50,740 EGP</p>
-<p><strong>الفائدة خلال ٦ أشهر:</strong> <529,440 EGP</p>
-
-<hr>
-
-<h2>تمثيل بصري للتكاليف</h2>
-
-<div class="graph">
-    <div class="bar bar-human" style="height:200px;">92,500</div>
-    <div class="bar bar-bot" style="height:90px;">41,760</div>
 </div>
 
-<div style="display:flex; justify-content:space-around; padding:0 50px;">
-    <div class="graph-label">تكلفة الفريق التقليدي</div>
-    <div class="graph-label">تكلفة NeuraTalk</div>
+
+<h3 style="margin-top:40px;">🎯 المقارنة البصرية للتكاليف</h3>
+
+<div class="graph-modern">
+    <div>
+        <div class="bar bar-human">92,500</div>
+        <div class="graph-label">التكاليف التقليدية</div>
+    </div>
+
+    <div>
+        <div class="bar bar-bot">41,760</div>
+        <div class="graph-label">NeuraTalk</div>
+    </div>
 </div>
 
-<hr>
 
-    <hr>
-
-<h2>تحليل خسارة العملاء بسبب عدم الرد البشري مقارنة بنظام NeuraTalk</h2>
-
-<div class="highlight">
-    <p>
-        يعتمد هذا التحليل على عدد الرسائل الشهري المتوقع بين 
-        <strong>1,000 إلى 5,000 رسالة شهرياً</strong>، مع افتراض نسبة ضياع بشرية
-        <strong>25% فقط</strong> بسبب التأخير أو عدم المتابعة.
-    </p>
-
-    <h3>حساب الخسارة الشهرية</h3>
-    <ul>
-        <li>1,000 رسالة → ضياع 25% = <strong>250 عميل ضائع</strong></li>
-        <li>5,000 رسالة → ضياع 25% = <strong>1,250 عميل ضائع</strong></li>
-    </ul>
-
-    <p>
-        بافتراض أن قيمة العميل المقبولة في السوق هي بين 
-        <strong>50 إلى 100 EGP</strong>، فإن الخسارة تكون:
-    </p>
-
-    <ul>
-        <li>الحد الأدنى: 250 × 50 = <strong>12,500 EGP خسارة شهرية</strong></li>
-        <li>الحد الأعلى: 1,250 × 50 = <strong>62,500 EGP خسارة شهرية</strong></li>
-    </ul>
-
-    <p><strong>متوسط الخسارة الشهرية الواقعية: 37,500 EGP</strong></p>
-
-    <h3>الخسارة خلال ٦ أشهر</h3>
-    <p><strong>37,500 × 6 = 225,000 EGP خسارة خلال ٦ أشهر</strong></p>
-
-    <h3>إجمالي الفوائد عند استخدام NeuraTalk</h3>
-    <p>
-        NeuraTalk يمنع ضياع الرسائل بنسبة <strong>100%</strong>، مما يوفر:
-    </p>
-    <ul>
-        <li><strong>225,000 EGP</strong> من خسارة العملاء</li>
-        <li><strong>304,440 EGP</strong> من الرواتب والإيجار والعمل اليدوي</li>
-    </ul>
-
-    <p style="font-size:20px; font-weight:bold; color:#1a4f8b;">
-        💰 إجمالي التوفير خلال ٦ أشهر:
-        <span style="color:#d9534f;">529,440 EGP</span>
-    </p>
+<h2>تحليل خسارة العملاء البشرية</h2>
+<div class="section-card">
+<p>
+الخسارة الشهرية بسبب عدم الرد:  
+<strong>متوسط 37,500 EGP</strong>
+</p>
+<p>
+خلال ٦ أشهر → <strong>225,000 EGP</strong> خسائر يمكن منعها بالكامل.
+</p>
 </div>
 
-    
-<h2>عرض خاص</h2>
-<div class="highlight">
-<p>🎁 <strong>مكافأة الولاء:</strong> شهر صيانة مجاني بالكامل بعد ٦ أشهر.</p>
-</div>
-
-<hr>
 
 <h2>توقيع NeuraTalk</h2>
-
+<div class="section-card">
 <p>الاسم: عبادة</p>
-<p>NeuraTalk – حلول الذكاء الاصطناعي المتقدمة</p>
 <p>الهاتف: +201274766610</p>
+<p>NeuraTalk – حلول الذكاء الاصطناعي</p>
+</div>
 
-<div class="highlight">
+
+<h2>موافقة العميل</h2>
+<div class="section-card">
 <p>أوافق على كافة الشروط المذكورة وأرغب في الاشتراك لمدة ٦ أشهر.</p>
-<p>توقيع العميل: ......................................</p>
+<p>التوقيع: ..................................................</p>
 </div>
 
 </div>
