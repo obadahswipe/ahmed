@@ -3,29 +3,102 @@
 <head>
 <meta charset="UTF-8">
 <title>عرض سعر NeuraTalk – العقد لمدة 6 أشهر</title>
+
 <style>
-    body { font-family: "Tahoma", sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; line-height: 1.8; direction: rtl; }
-    .container { background: #fff; padding: 25px; border-radius: 12px; max-width: 950px; margin: auto; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
-    h1, h2, h3 { color: #2b6cb0; }
-    table { width: 100%; border-collapse: collapse; margin: 15px 0; }
-    table, th, td { border: 1px solid #ddd; }
-    th, td { padding: 12px; text-align: center; }
-    th { background-color: #2b6cb0; color: #fff; }
-    .highlight { background: #e2f0ff; padding: 10px; border-radius: 8px; margin: 15px 0; }
-    .footer { margin-top: 30px; font-size: 14px; text-align: center; color: #444; }
-    .graph { display: flex; align-items: flex-end; justify-content: space-around; margin: 20px 0; height: 200px; border-left: 2px solid #333; border-bottom: 2px solid #333; padding-left: 10px; }
-    .bar { width: 80px; margin: 0 10px; text-align: center; color: #fff; border-radius: 6px 6px 0 0; }
-    .bar-label { color: #333; margin-top: 5px; font-weight: bold; }
-    .bar-human { background-color: #f56565; }
-    .bar-bot { background-color: #48bb78; }
-    .discount { color: #e53e3e; font-weight: bold; }
+    body {
+        font-family: "Cairo", Tahoma, sans-serif;
+        background: #f0f3f8;
+        margin: 0;
+        padding: 25px;
+        line-height: 1.9;
+        direction: rtl;
+    }
+    .container {
+        background: #fff;
+        padding: 35px;
+        border-radius: 18px;
+        max-width: 1050px;
+        margin: auto;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    h1, h2, h3 {
+        color: #1a4f8b;
+        margin-bottom: 10px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+    }
+    table th {
+        background: #1a4f8b;
+        color: #fff;
+        padding: 12px;
+    }
+    table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        background: #fafafa;
+    }
+    .highlight {
+        background: #e7f1ff;
+        padding: 18px;
+        border-radius: 10px;
+        margin-top: 20px;
+        border-right: 4px solid #1a4f8b;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 15px;
+        color: #555;
+    }
+
+    /* Animated Graph Bars */
+    .graph {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        margin: 20px 0;
+        height: 230px;
+        padding: 10px;
+        border-left: 3px solid #333;
+        border-bottom: 3px solid #333;
+    }
+    .bar {
+        width: 120px;
+        border-radius: 8px 8px 0 0;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 6px;
+        animation: grow 2s ease-in-out forwards;
+    }
+    .bar-human { background: #d9534f; height: 100px; }
+    .bar-bot { background: #5cb85c; height: 100px; }
+    .graph-label {
+        text-align: center;
+        margin-top: 8px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    @keyframes grow {
+        0% { height: 0; }
+    }
+
 </style>
 </head>
 <body>
 
 <div class="container">
 
-<h1>NeuraTalk – العرض الرسمي المحدث</h1>
+<h1>NeuraTalk – العرض الرسمي</h1>
+
 <p><strong>رقم العرض:</strong> NT-2024-001</p>
 <p><strong>التاريخ:</strong> ٢٤ نوفمبر ٢٠٢٥</p>
 <p><strong>صالح لمدة:</strong> ٧ أيام</p>
@@ -35,7 +108,7 @@
 <hr>
 
 <h2>نوع الخدمة</h2>
-<p>بناء وتشغيل شات بوت ذكي متعدد المنصات يعمل بالذكاء الاصطناعي، مع توفير تشغيل كامل شامل يتفوق على فرق خدمة العملاء التقليدية.</p>
+<p>بناء وتشغيل شات بوت ذكي متعدد المنصات يعمل بالذكاء الاصطناعي، ويقوم بمهام فريق خدمة العملاء بشكل أسرع، أدق، وأكثر كفاءة.</p>
 
 <hr>
 
@@ -44,45 +117,48 @@
 <table>
 <thead>
 <tr>
-<th>البند</th>
+<th>الخدمة</th>
 <th>السعر الأصلي (EGP)</th>
-<th>السعر بعد الخصم (USD / EGP)</th>
+<th>سعر الخصم (USD / EGP)</th>
 <th>نسبة الخصم</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>البناء والإعداد الكامل (مرة واحدة)</td>
 <td>28,800</td>
-<td><span class="discount">$450 / 21,600 EGP</span></td>
+<td><strong>$450 / 21,600 EGP</strong></td>
 <td>25%</td>
 </tr>
+
 <tr>
-<td>التشغيل والصيانة الشهرية – خطة Standard</td>
+<td>التشغيل والصيانة الشهرية – Standard</td>
 <td>43,200</td>
-<td><span class="discount">$420 / 20,160 EGP</span></td>
+<td><strong>$420 / 20,160 EGP</strong></td>
 <td>53%</td>
 </tr>
+
 <tr>
 <td><strong>إجمالي الشهر الأول</strong></td>
 <td>72,000</td>
-<td><span class="discount">$870 / 41,760 EGP</span></td>
+<td><strong>$870 / 41,760 EGP</strong></td>
 <td>42%</td>
 </tr>
 </tbody>
 </table>
 
 <div class="highlight">
-<h3>ما يشمله العرض</h3>
+<h3>ما الذي يشمله العرض؟</h3>
 <ul>
-<li>تصميم وبرمجة شات بوت ذكي متكامل</li>
-<li>الربط مع ٥ منصات: (فيسبوك – إنستجرام – واتساب – تيك توك – التعليقات)</li>
-<li>تدريب الذكاء الاصطناعي على جميع الأسئلة الشائعة</li>
-<li>جمع بيانات العملاء (الاسم، الهاتف، الخدمة المطلوبة)</li>
-<li>تحويل المحادثات تلقائياً إلى الموظف عند الحاجة</li>
-<li>دعم اللغتين العربية والإنجليزية</li>
+<li>تصميم وبناء شات بوت ذكي كامل</li>
+<li>الربط مع ٥ منصات تواصل (فيسبوك – إنستجرام – واتساب – تيك توك – التعليقات)</li>
+<li>تدريب الذكاء الاصطناعي على جميع الأسئلة والسيناريوهات</li>
+<li>جمع بيانات العملاء بشكل تلقائي</li>
+<li>تحويل المحادثة للموظف عند الحاجة</li>
 <li>تشغيل ٢٤/٧ بدون توقف</li>
-<li>دعم فني وصيانة وتحديثات مستمرة</li>
+<li>لغتين: عربي وإنجليزي</li>
+<li>دعم وصيانة طوال فترة العقد</li>
 </ul>
 </div>
 
@@ -91,7 +167,7 @@
 <h2>الجدول الزمني</h2>
 <ul>
 <li>مدة التنفيذ: ٣–٤ أسابيع</li>
-<li>الإطلاق التجريبي: بعد أسبوعين</li>
+<li>الإطلاق التجريبي: خلال أسبوعين</li>
 <li>الإطلاق الكامل: الأسبوع الثالث أو الرابع</li>
 </ul>
 
@@ -99,96 +175,83 @@
 
 <h2>شروط الدفع</h2>
 <ul>
-<li>يمكن الدفع شهرياً أو ربع سنوي (٣ أشهر مقدماً)</li>
-<li>دفعة مقدمة: ٥٠٪ عند التوقيع = 750 دولار (36,000 EGP)</li>
-<li>الدفعة الثانية: ٥٠٪ عند الإطلاق = 750 دولار (36,000 EGP)</li>
-<li>الفواتير الشهرية تُدفع في بداية كل شهر</li>
+<li>الدفع شهرياً أو ربع سنوي (٣ أشهر مقدماً)</li>
+<li>دفعة مقدمة عند التوقيع: 750 دولار</li>
+<li>دفعة ثانية عند الإطلاق: 750 دولار</li>
 </ul>
 
 <hr>
 
 <h2>مدة العقد</h2>
-<p>العقد لمدة <strong>٦ أشهر</strong></p>
+<p><strong>العقد لمدة ٦ أشهر</strong></p>
 
 <hr>
 
-<h2>الفوائد الحقيقية للعملاء (بعد إضافة جميع العوامل)</h2>
+<h2>الفوائد المالية للعمل مع NeuraTalk</h2>
+<p>اعتماداً على الرواتب، الإيجار، الإنتاجية، والتقصير البشري، تم حساب التكلفة الحقيقية لفريق خدمة العملاء التقليدي:</p>
 
 <table>
 <thead>
 <tr>
-<th>العنصر</th>
+<th>البند</th>
 <th>التكلفة الشهرية (EGP)</th>
 </tr>
 </thead>
+
 <tbody>
-<tr>
-<td>رواتب ٥ موظفين (6,000 EGP لكل موظف)</td>
-<td>30,000</td>
-</tr>
-<tr>
-<td>راتب المنسق + الإشراف</td>
-<td>10,000</td>
-</tr>
-<tr>
-<td>الإيجار والمكاتب والتجهيزات (30,000 EGP)</td>
-<td>30,000</td>
-</tr>
-<tr>
-<td>الغياب – الاستراحات – فقد الإنتاجية</td>
-<td>7,500</td>
-</tr>
-<tr>
-<td>الخسائر الناتجة عن عدم الرد / المتابعة</td>
-<td>15,000</td>
-</tr>
-<tr>
-<td><strong>إجمالي التكلفة الشهرية للفريق التقليدي</strong></td>
-<td><strong>92,500 EGP</strong></td>
-</tr>
+<tr><td>رواتب ٥ موظفين (6,000 لكل موظف)</td><td>30,000</td></tr>
+<tr><td>راتب المنسق</td><td>10,000</td></tr>
+<tr><td>إيجار وتجهيزات المكتب</td><td>30,000</td></tr>
+<tr><td>فقد الإنتاجية (استراحات + غياب)</td><td>7,500</td></tr>
+<tr><td>خسارة العملاء بسبب عدم الرد أو المتابعة</td><td>15,000</td></tr>
+
+<tr><td><strong>إجمالي التكلفة الحقيقية</strong></td><td><strong>92,500 EGP</strong></td></tr>
 </tbody>
 </table>
 
-<h3>الفوائد من استخدام NeuraTalk:</h3>
-<p><strong>التكلفة الشهرية للبوت:</strong> 41,760 EGP</p>
-<p><strong>الفوائد الشهرية:</strong> 50,740 EGP</p>
-<p><strong>الفوائد خلال ٦ أشهر:</strong> 304,440 EGP</p>
+<h3>الفوائد الشهرية باستخدام NeuraTalk</h3>
+<p><strong>التكلفة بعد الخصم:</strong> 41,760 EGP</p>
+<p><strong>الفائدة الشهرية:</strong> 50,740 EGP</p>
+<p><strong>الفائدة خلال ٦ أشهر:</strong> 304,440 EGP</p>
 
 <hr>
 
-<h2>تمثيل بصري للتكاليف والفوائد</h2>
+<h2>تمثيل بصري للتكاليف</h2>
+
 <div class="graph">
-<div class="bar bar-human" style="height: 200px;">92,500</div>
-<div class="bar bar-bot" style="height: 90px;">41,760</div>
+    <div class="bar bar-human" style="height:200px;">92,500</div>
+    <div class="bar bar-bot" style="height:90px;">41,760</div>
 </div>
-<div style="display:flex; justify-content: space-between; padding:0 20px;">
-<span class="bar-label">الفريق التقليدي</span>
-<span class="bar-label">NeuraTalk</span>
+
+<div style="display:flex; justify-content:space-around; padding:0 50px;">
+    <div class="graph-label">تكلفة الفريق التقليدي</div>
+    <div class="graph-label">تكلفة NeuraTalk</div>
 </div>
 
 <hr>
 
 <h2>عرض خاص</h2>
 <div class="highlight">
-<p>🎁 <strong>مكافأة الولاء:</strong> شهر صيانة مجاني بالكامل بعد ٣ أشهر من التعاون.</p>
+<p>🎁 <strong>مكافأة الولاء:</strong> شهر صيانة مجاني بالكامل بعد ٣ أشهر.</p>
 </div>
 
 <hr>
 
 <h2>توقيع NeuraTalk</h2>
+
 <p>الاسم: عبادة</p>
 <p>NeuraTalk – حلول الذكاء الاصطناعي المتقدمة</p>
 <p>الهاتف: ٠٠٢٠١٢٧٤٧٦٦٦١٠</p>
 
 <div class="highlight">
-<p>أوافق على كافة الشروط أعلاه وأرغب في الاشتراك بالعقد لمدة ٦ أشهر.</p>
+<p>أوافق على كافة الشروط المذكورة وأرغب في الاشتراك لمدة ٦ أشهر.</p>
 <p>توقيع العميل: ......................................</p>
 </div>
 
 </div>
 
 <div class="footer">
-<p>© 2025 NeuraTalk – جميع الحقوق محفوظة</p>
+© 2025 NeuraTalk – جميع الحقوق محفوظة
 </div>
 
 </body>
