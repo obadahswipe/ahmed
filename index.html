@@ -1,146 +1,146 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>عرض سعر NeuraTalk — 6 أشهر</title>
 
-<!-- Cairo font -->
+<!-- Cairo Font -->
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
   :root{
-    --bg1:#eef6ff;
-    --bg2:#f8fbff;
-    --glass:#ffffffcc;
-    --accent:#1b4f8b;
-    --accent-2:#3b82f6;
-    --muted:#6b7280;
-    --success:#10b981;
-    --danger:#ef4444;
-    --card-shadow: 0 8px 30px rgba(31,41,55,0.08);
+    --bg-1: #eef6ff;
+    --card-bg: rgba(255,255,255,0.88);
+    --glass-border: rgba(255,255,255,0.6);
+    --accent: #164a8a;
+    --accent-2: #2f7be6;
+    --muted: #55606a;
+    --success:#0ea26b;
+    --danger:#e63b3b;
+    --shadow: 0 12px 40px rgba(10,20,40,0.08);
   }
 
-  html,body{height:100%;margin:0;padding:0;font-family:"Cairo",sans-serif;background:linear-gradient(160deg,var(--bg1),var(--bg2));color:#0f172a;}
-  .wrap{max-width:1150px;margin:28px auto;padding:28px;}
-  .panel{
-    background: linear-gradient(180deg, rgba(255,255,255,0.82), rgba(255,255,255,0.70));
-    border-radius:16px;
-    padding:28px;
-    box-shadow:var(--card-shadow);
-    border:1px solid rgba(255,255,255,0.6);
-    backdrop-filter: blur(10px) saturate(140%);
+  html,body{height:100%;margin:0;padding:0;font-family:"Cairo",sans-serif;background:linear-gradient(180deg,var(--bg-1), #fbfdff);color:#0b1320; -webkit-font-smoothing:antialiased;}
+  .paper{
+    max-width: 900px;
+    margin: 28px auto;
+    padding: 28px;
   }
 
-  header{display:flex;align-items:center;justify-content:space-between;gap:16px;}
-  .brand{
-    display:flex;gap:14px;align-items:center;
+  .card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 26px;
+    box-shadow: var(--shadow);
+    border:1px solid var(--glass-border);
+    backdrop-filter: blur(8px) saturate(120%);
   }
+
+  header{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;flex-wrap:wrap}
+  .brand{display:flex;gap:14px;align-items:center}
   .logo{
-    width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:20px;box-shadow:0 6px 18px rgba(59,130,246,0.18);
+    width:78px;height:78px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:22px;box-shadow:0 8px 26px rgba(47,123,230,0.14)
   }
-  h1{font-size:20px;margin:0;color:var(--accent);letter-spacing:0.2px}
-  .meta{font-size:13px;color:var(--muted);}
+  .title{line-height:1}
+  .title h1{margin:0;font-size:20px;color:var(--accent);font-weight:800}
+  .title .sub{font-size:13px;color:var(--muted);margin-top:6px}
 
-  /* grid layout */
-  .grid{
-    display:grid;
-    grid-template-columns: 1fr 360px;
-    gap:22px;
-    margin-top:20px;
-  }
+  .meta{font-size:13px;color:var(--muted);text-align:left}
+  .meta strong{color:#071233}
 
-  /* left content */
-  .card{background:rgba(255,255,255,0.55);border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,0.55);box-shadow:0 6px 18px rgba(15,23,42,0.04);}
-  .card h2{margin:0;color:var(--accent);font-size:16px;}
-  .small{font-size:13px;color:var(--muted);margin-top:6px;}
+  hr{border:0;border-top:1px solid rgba(10,20,40,0.06);margin:20px 0}
 
-  table{width:100%;border-collapse:collapse;margin-top:14px;font-size:15px}
-  th,td{padding:12px 10px;text-align:right}
-  thead th{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;border-radius:8px;font-weight:700}
-  tbody td{background:rgba(255,255,255,0.85);border-bottom:1px solid #eef2ff}
+  /* layout */
+  .columns{display:grid;grid-template-columns: 1fr 320px;gap:20px}
+  @media (max-width:980px){ .columns{grid-template-columns:1fr} .meta{text-align:right} }
 
-  /* financial highlights */
-  .highlights{display:flex;gap:12px;margin-top:16px}
-  .pill{flex:1;padding:14px;border-radius:12px;background:linear-gradient(180deg,#fff,#f6fafc);box-shadow:0 6px 18px rgba(15,23,42,0.04);}
-  .pill .num{font-weight:800;color:var(--accent);font-size:18px}
-  .pill .muted{font-size:13px;color:var(--muted);margin-top:6px}
+  /* table */
+  table{width:100%;border-collapse:collapse;font-size:15px;margin-top:10px}
+  thead th{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;padding:12px;border-radius:8px;font-weight:700;text-align:right}
+  td, th{padding:12px;text-align:right;border-bottom:1px solid rgba(10,20,40,0.04);vertical-align:middle}
+  tbody td{background:rgba(255,255,255,0.9)}
+
+  .row-total td{background:linear-gradient(180deg,#fff,#f1f7ff);font-weight:800;color:var(--accent)}
+
+  /* highlights */
+  .highlights{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+  .chip{flex:1;min-width:150px;padding:14px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfeff);border:1px solid rgba(10,20,40,0.03);box-shadow:0 8px 24px rgba(10,20,40,0.04)}
+  .chip .num{font-size:18px;font-weight:800;color:var(--accent)}
+  .chip .label{font-size:13px;color:var(--muted);margin-top:6px}
 
   /* graph */
-  .visual{
-    margin-top:22px;padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.5));display:flex;gap:18px;align-items:end;justify-content:space-around;
-    height:250px;border:1px solid rgba(255,255,255,0.6);
-  }
+  .graph-wrap{margin-top:18px;padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.5));border:1px solid rgba(255,255,255,0.6);}
+  .graph{display:flex;gap:24px;align-items:end;height:220px;justify-content:center}
+  .graph .col{display:flex;flex-direction:column;align-items:center;gap:8px}
   .bar{
-    width:120px;border-radius:12px 12px 0 0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:10px;color:#fff;font-weight:800;
-    box-shadow:0 8px 20px rgba(2,6,23,0.07);
-    transition:transform .6s cubic-bezier(.2,.9,.3,1);
-  }
-  .bar:hover{transform:translateY(-10px)}
-  .bar .label{font-size:14px}
-  .bar.human{background:linear-gradient(180deg,#ef4444,#ff7a7a);height:240px;} /* 92,500 */
-  .bar.bot{background:linear-gradient(180deg,#10b981,#6ee7b7);height:108px;}   /* 41,760 relative */
+    width:140px;border-radius:12px 12px 0 0;color:#fff;font-weight:800;display:flex;align-items:flex-end;justify-content:center;padding-bottom:8px;box-shadow:0 10px 24px rgba(2,6,23,0.06);transition:transform .5s}
+  .bar.human{background:linear-gradient(180deg,#e63b3b,#ff7a7a);height:220px}
+  .bar.bot{background:linear-gradient(180deg,#0ea26b,#6ee7b7);height:100px}
+  .bar:hover{transform:translateY(-8px)}
+  .graph-label{font-size:13px;color:var(--muted);font-weight:700}
 
-  .bar-foot{display:flex;justify-content:space-between;margin-top:10px;font-size:14px;color:var(--muted)}
+  /* aside */
+  .aside{display:flex;flex-direction:column;gap:12px}
+  .aside .box{padding:14px;border-radius:12px;background:linear-gradient(180deg,#fff,#f8fbff);border:1px solid rgba(10,20,40,0.03)}
+  .aside h3{margin:0;color:var(--accent);font-size:15px}
+  .amount{font-size:20px;font-weight:800;color:#0b2b56;margin-top:8px}
 
-  /* right column - summary & payments */
-  .aside{position:relative;display:flex;flex-direction:column;gap:14px}
-  .paybox{padding:14px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfeff);border:1px solid rgba(200,210,255,0.6)}
-  .paybox h3{margin:0;color:var(--accent);font-size:15px}
-  .pay-amount{display:flex;flex-direction:column;gap:6px;margin-top:12px}
-  .big{font-size:22px;font-weight:800;color:#0b3b66}
-  .sub{font-size:13px;color:var(--muted)}
-
-  .cta-row{display:flex;gap:10px;margin-top:12px}
-  .btn{flex:1;padding:10px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
-  .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;box-shadow:0 8px 20px rgba(59,130,246,0.18)}
-  .btn.ghost{background:transparent;border:1px solid rgba(30,58,138,0.12);color:var(--accent)}
-
-  /* payments breakdown */
-  .payments{margin-top:14px;font-size:14px;color:#0f172a}
-  .payments ul{padding-left:18px;margin:8px 0;color:var(--muted)}
+  .payments ul{padding-inline-start:18px;margin:10px 0;color:var(--muted);font-size:14px}
   .payments li{margin:8px 0}
 
-  /* terms */
-  .terms{margin-top:14px;font-size:13px;color:var(--muted);line-height:1.6}
-  .signature{margin-top:18px;padding:14px;border-radius:10px;background:linear-gradient(180deg,#fff,#f7fbff);border:1px dashed rgba(30,58,138,0.06);text-align:right}
+  .cta{display:flex;gap:10px;margin-top:10px}
+  .btn{flex:1;padding:10px;border-radius:10px;border:0;font-weight:800;cursor:pointer}
+  .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;box-shadow:0 10px 26px rgba(47,123,230,0.12)}
+  .btn.ghost{background:transparent;border:1px solid rgba(10,20,40,0.06);color:var(--accent)}
 
-  footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
-  @media (max-width:980px){
-    .grid{grid-template-columns:1fr; }
-    .brand{flex-direction:column;align-items:flex-start}
-    .visual{height:200px}
+  .terms{font-size:13px;color:var(--muted);line-height:1.6;margin-top:8px}
+  .signature{margin-top:14px;padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfeff);border:1px dashed rgba(10,20,40,0.06);text-align:right}
+
+  footer{margin-top:16px;text-align:center;color:var(--muted);font-size:13px}
+
+  /* print tweaks */
+  @media print{
+    body{background:white}
+    .paper{margin:0;padding:0}
+    .btn{display:none}
+    .card{box-shadow:none;border:0}
   }
 </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="panel">
+  <div class="paper">
+    <div class="card" role="document" aria-label="عرض سعر NeuraTalk">
+      <!-- header -->
       <header>
-        <div class="brand">
-          <div class="logo">NT</div>
-          <div>
-            <h1>NeuraTalk — عرض سعر رسمي (6 أشهر)</h1>
-            <div class="meta">رقم العرض: <strong>NT-2024-001</strong> &nbsp;&nbsp; | &nbsp;&nbsp;التاريخ: ٢٥ نوفمبر ٢٠٢٥</div>
+        <div class="brand" style="align-items:flex-start">
+          <div class="logo" aria-hidden="true">NT</div>
+          <div class="title">
+            <h1>NeuraTalk — عرض سعر رسمي للعقد (6 أشهر)</h1>
+            <div class="sub">حلول شات بوت ذكي · تشغيل وصيانة · دعم ثنائي اللغة</div>
+            <div style="margin-top:8px;font-size:13px;color:var(--muted)">العرض مُعد خصيصاً لـ: <strong>سهل للخدمات القنصلية</strong></div>
           </div>
         </div>
 
-        <div style="text-align:left">
-          <div class="meta" style="font-weight:700;color:var(--accent)">إلى: سهل للخدمات القنصلية</div>
-          <div class="meta">جهة الاتصال: أ. مريم</div>
+        <div class="meta" style="text-align:left">
+          <div>رقم العرض: <strong>NT-2024-001</strong></div>
+          <div>التاريخ: <strong>٢٥ نوفمبر ٢٠٢٥</strong></div>
+          <div style="margin-top:8px">جهة الاتصال: <strong>أ. مريم</strong></div>
         </div>
       </header>
 
-      <div class="grid">
-        <!-- left content -->
-        <div>
-          <!-- Prices table -->
-          <div class="card">
-            <h2>تفاصيل الأسعار (بعد الخصم)</h2>
-            <div class="small">الأرقام كما زودتنا بها — مُوضّحة بالدولار والـ EGP</div>
+      <hr>
 
-            <table>
+      <div class="columns">
+        <!-- LEFT: content -->
+        <div>
+          <!-- Prices -->
+          <section class="card" aria-labelledby="prices-title">
+            <h2 id="prices-title">تفاصيل الأسعار (بعد الخصم)</h2>
+            <div style="margin-top:8px;font-size:13px;color:var(--muted)">الأرقام كما زودتونا بها — مُوضّحة بالدولار والـ EGP</div>
+
+            <table role="table" aria-label="تفاصيل الأسعار">
               <thead>
                 <tr>
                   <th>الخدمة</th>
@@ -151,7 +151,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td style="width:38%">البناء والإعداد الكامل</td>
+                  <td>البناء والإعداد الكامل</td>
                   <td>28,800</td>
                   <td><strong>$450 / 21,600</strong></td>
                   <td>25%</td>
@@ -164,8 +164,8 @@
                   <td>53%</td>
                 </tr>
 
-                <tr>
-                  <td><strong>إجمالي الشهر الأول</strong></td>
+                <tr class="row-total">
+                  <td>إجمالي الشهر الأول</td>
                   <td>72,000</td>
                   <td><strong>$870 / 41,760</strong></td>
                   <td>42%</td>
@@ -173,128 +173,119 @@
               </tbody>
             </table>
 
-            <div class="highlights">
-              <div class="pill">
+            <div class="highlights" role="group" aria-label="نقاط مالية رئيسية">
+              <div class="chip">
                 <div class="num">التكلفة بعد الخصم</div>
-                <div class="muted"><span style="font-weight:800;color:#0b3b66">41,760 EGP</span> — $870</div>
+                <div class="label"><strong>41,760 EGP</strong> — $870</div>
               </div>
-
-              <div class="pill">
-                <div class="num">التوفير الشهري (تقريبي)</div>
-                <div class="muted"><span style="font-weight:800;color:var(--success)">50,740 EGP</span></div>
+              <div class="chip">
+                <div class="num">التوفير الشهري</div>
+                <div class="label"><strong style="color:var(--success)">50,740 EGP</strong> (تقديري)</div>
               </div>
-
-              <div class="pill">
-                <div class="num">التوفير ٦ أشهر</div>
-                <div class="muted"><span style="font-weight:800;color:var(--danger)">529,440 EGP</span></div>
+              <div class="chip">
+                <div class="num">التوفير خلال ٦ أشهر</div>
+                <div class="label"><strong style="color:var(--danger)">529,440 EGP</strong> (تقديري)</div>
               </div>
             </div>
+          </section>
 
-          </div>
+          <!-- Graph -->
+          <section class="card graph-wrap" aria-hidden="false">
+            <h2 style="margin:0;color:var(--accent)">مقارنة بصرية للتكاليف</h2>
+            <div style="margin-top:8px;font-size:13px;color:var(--muted)">تكلفة فريق خدمة العملاء التقليدي مقابل تكلفة NeuraTalk</div>
 
-          <!-- Visual graph -->
-          <div class="card" style="margin-top:18px">
-            <h2>مقارنة بصرية للتكاليف</h2>
-            <div class="small">مقارنة بين تكلفة فريق خدمة العملاء التقليدي وتكلفة NeuraTalk بعد الخصم</div>
-
-            <div class="visual" aria-hidden="true">
-              <!-- human bar (92500) -->
-              <div style="text-align:center">
-                <div class="bar human" title="تكلفة الفريق التقليدي — 92,500 EGP">92,500</div>
-                <div style="margin-top:8px;font-weight:700;color:var(--muted)">التكاليف التقليدية</div>
+            <div class="graph" role="img" aria-label="مخطط مقارنة التكاليف">
+              <div class="col">
+                <div class="bar human" title="تكلفة الفريق التقليدي 92,500 EGP">92,500</div>
+                <div class="graph-label">التكاليف التقليدية</div>
               </div>
 
-              <!-- bot bar (41760) -->
-              <div style="text-align:center">
-                <div class="bar bot" title="تكلفة NeuraTalk — 41,760 EGP">41,760</div>
-                <div style="margin-top:8px;font-weight:700;color:var(--muted)">NeuraTalk</div>
+              <div class="col">
+                <div class="bar bot" title="تكلفة NeuraTalk 41,760 EGP">41,760</div>
+                <div class="graph-label">NeuraTalk</div>
               </div>
             </div>
+          </section>
 
-            <div class="bar-foot">
-              <div>مبني على أرقام التكلفة الشهرية المذكورة</div>
-              <div style="font-weight:700;color:var(--muted)">فوائد مرئية</div>
-            </div>
-          </div>
-
-          <!-- scope & timeline -->
-          <div class="card" style="margin-top:18px">
-            <h2>ما الذي يشمله العرض؟</h2>
-            <ul style="margin:10px 0;color:var(--muted)">
-              <li>تصميم وبناء شات بوت ذكي متعدد القنوات (واتساب، إنستجرام، فيسبوك، تيك توك، تعليقات)</li>
-              <li>تدريب الذكاء الاصطناعي على الأسئلة والسيناريوهات المتوقعة</li>
-              <li>تحويل للمشغل البشري عند الحاجة + سجل محادثات</li>
-              <li>جمع بيانات العملاء وتصديرها بصيغة قابلة للتكامل (CSV / API)</li>
-              <li>تشغيل ٢٤/٧، دعم ثنائي اللغة (عربي / إنجليزي) وصيانة خلال مدة العقد</li>
+          <!-- Scope & Timeline -->
+          <section class="card" aria-labelledby="scope-title">
+            <h2 id="scope-title">نطاق العمل والجدول الزمني</h2>
+            <ul style="margin:10px 0;color:var(--muted);font-size:14px;line-height:1.7">
+              <li><strong>نطاق العمل:</strong> تصميم وبناء شات بوت ذكي متعدد القنوات (واتساب، إنستجرام، فيسبوك، تيك توك، تعليقات) مع تدريب الموديل على سيناريوهات الدعم المتكررة، تحويل للمشغل البشري، وتصدير بيانات العملاء (CSV / API).</li>
+              <li><strong>اللغات:</strong> عربي وإنجليزي (دعم ثنائي اللغة).</li>
+              <li><strong>الجدول الزمني:</strong> الإعداد والتهيئة: 2–3 أسابيع. الإطلاق التجريبي: الأسبوع الثالث. الإطلاق الكامل: الأسبوع الرابع (مع ضبط الأداء).</li>
+              <li><strong>التسليم:</strong> بيئة اختبار + بيئة إنتاج + دليل تشغيل قصير للفريق + تدريب عملي للمنسق.</li>
             </ul>
+          </section>
 
-            <h3 style="margin-top:14px">الجدول الزمني المختصر</h3>
-            <div class="small">
-              • إعداد وتكوين: ٢–٣ أسابيع<br>
-              • إطلاق تجريبي ومراجعات: الأسبوع الثالث<br>
-              • إطلاق كامل وضبط الأداء: نهاية الأسبوع الرابع
+          <!-- Loss analysis -->
+          <section class="card">
+            <h2>تحليل خسارة العملاء بسبب التأخير اليدوي</h2>
+            <div style="color:var(--muted);font-size:14px;line-height:1.6">
+              التحليل مبني على 1,000–5,000 رسالة شهرياً مع افتراض ضياع 25% بسبب التأخير أو عدم المتابعة.  
+              متوسط الخسارة الشهري المتوقعة: <strong>37,500 EGP</strong>. الخسارة خلال 6 أشهر: <strong>225,000 EGP</strong>.  
+              NeuraTalk يقلل ضياع الرسائل بشكل كبير ويضيف وفورات إضافية من ناحية الرواتب وتجهيزات المكتب (التوفير الكلي 6 أشهر: <strong>529,440 EGP</strong> تقريباً).
             </div>
-          </div>
-
+          </section>
         </div>
 
-        <!-- right column / aside -->
+        <!-- RIGHT: aside -->
         <aside class="aside">
-          <div class="paybox">
-            <h3>خلاصة مالية سريعة</h3>
-            <div class="pay-amount">
-              <div class="big">إجمالي الشهر الأول: <span style="color:var(--danger)">41,760 EGP</span></div>
-              <div class="sub">بالدولار: <strong>$870</strong></div>
-            </div>
+          <div class="box">
+            <h3>الخلاصة المالية</h3>
+            <div class="amount">إجمالي الشهر الأول: <span style="color:var(--danger)">41,760 EGP</span></div>
+            <div style="margin-top:6px;font-size:13px;color:var(--muted)">بالدولار: <strong>$870</strong></div>
 
-            <div class="payments">
-              <h3 style="margin-top:12px;font-size:14px">خيارات الدفع الموصى بها</h3>
+            <div style="margin-top:12px" class="payments">
+              <h3 style="margin-bottom:6px;font-size:14px">خيارات الدفع المقترحة</h3>
               <ul>
-                <li><strong>الخيار A — دفعتان متساويتان:</strong> دفعة أولى (50%) عند التوقيع: <strong>20,880 EGP</strong> — (50% من $870 = <strong>$435</strong>).<br>الدفعة الثانية: <strong>20,880 EGP</strong> عند الإطلاق/التسليم.</li>
-                <li><strong>الخيار B — دفع كامل مقدماً:</strong> دفع كامل إجمالي الشهر الأول: <strong>41,760 EGP</strong> (يوفر سرعة التنفيذ وتخصيص موارد أسرع).</li>
+                <li><strong>الخيار A — دفعتان متساويتان (موصى به):</strong> 50% عند التوقيع = <strong>20,880 EGP</strong> (≈ $435) ثم 50% عند الإطلاق = <strong>20,880 EGP</strong>.</li>
+                <li><strong>الخيار B — دفعة مقدمة كاملة:</strong> دفع كامل الشهر الأول = <strong>41,760 EGP</strong>.</li>
               </ul>
-
-              <div style="margin-top:10px;font-size:13px;color:var(--muted)">
-                <strong>ملاحظة مهمة:</strong> الأسعار أعلاه هي الأسعار المخصومة كما زودتونا بها (USD / EGP). الأسعار لا تشمل ضريبة القيمة المضافة إن وجدت، وستضاف على الفاتورة النهائية إذا لزم الأمر.
-              </div>
             </div>
 
-            <div class="cta-row">
+            <div style="margin-top:10px;font-size:13px;color:var(--muted)">
+              <strong>ملاحظة ضريبية:</strong> الأسعار لا تشمل ضريبة القيمة المضافة (VAT). إن كنت تتطلب فاتورة VAT سيتم إضافة نسبة الضريبة حسب القوانين المحلية على الفاتورة النهائية.
+            </div>
+
+            <div class="cta">
               <button class="btn primary" onclick="window.print()">طباعة / حفظ PDF</button>
-              <button class="btn ghost" onclick="alert('Contact: +201274766610 — يمكن تعديل هذه الرسالة لتضمين رابط موافقة مباشر')">إرسال للموافقة</button>
+              <button class="btn ghost" onclick="location.href='mailto:contact@neuratalk.com?subject=قبول عرض NT-2024-001'">أرسل موافقة عبر الإيميل</button>
             </div>
           </div>
 
-          <div class="card">
-            <h3>طرق الدفع المقبولة</h3>
-            <div class="small" style="margin-top:8px">
-              تحويل بنكي / فودافون كاش / ويسترن يونيون / بايبال (للدفع بالدولار). سنزوّد بيانات الحساب عند الموافقة.
-            </div>
-
-            <h3 style="margin-top:12px">الضمان والدعم</h3>
-            <div class="small" style="margin-top:8px">
-              • دعم فني خلال ساعات العمل: 9 صباحاً – 6 مساءً (أيام العمل).<br>
-              • صيانة وتصحيح أخطاء مضمونة خلال فترة العقد. تعديلات صغيرة شهرياً مشمولة — تعديلات كبرى يتم الاتفاق عليها منفصلاً.
+          <div class="box">
+            <h3>طرق الدفع</h3>
+            <div style="font-size:13px;color:var(--muted);margin-top:8px">
+              تحويل بنكي محلي، فودافون كاش، تحويل دولي / بايبال (للدفع بالدولار). بيانات الدفع ستُزوّد بعد الموافقة الرسمية.
             </div>
           </div>
 
-          <div class="card">
+          <div class="box">
+            <h3>الضمان والدعم (SLA)</h3>
+            <div style="font-size:13px;color:var(--muted);margin-top:8px;line-height:1.6">
+              • دعم خلال أيام العمل: 9:00 – 18:00 (GMT+2).<br>
+              • استجابة للحالات الحرجة خلال 4 ساعات.<br>
+              • صيانة دورية وتصحيح أعطال شامل طوال مدة العقد (تعديلات صغيرة ضمن نطاق العقد مُشمولة).<br>
+              • تعديلات كبيرة أو ميزات جديدة يتم تسعيرها منفصلاً.
+            </div>
+          </div>
+
+          <div class="box">
             <h3>الخصوصية والأمن</h3>
-            <div class="small">
-              • البيانات محفوظة على خوادم آمنة. سيتم توقيع ملحق حماية البيانات حسب الحاجة.<br>
-              • المحادثات والبيانات يمكن تشفيرها وتصديرها عند الطلب.
+            <div style="font-size:13px;color:var(--muted);margin-top:8px;line-height:1.6">
+              • تخزين المشفر للمحادثات والبيانات على خوادم آمنة.<br>
+              • سياسة خصوصية وملحق حماية بيانات قابلة للتوقيع عند الطلب.<br>
+              • إمكانية حظر أو حذف بيانات حساسة بناءً على متطلبات العميل.
             </div>
           </div>
 
-          <div class="card signature">
-            <div style="text-align:right">
-              <div style="font-weight:800;color:var(--accent)">NeuraTalk — حلول الذكاء الاصطناعي</div>
-              <div class="small" style="margin-top:6px">الاسم: عبادة<br>هاتف: +201274766610</div>
-              <div style="margin-top:10px">أوافق على كافة الشروط المذكورة وأرغب في الاشتراك لمدة ٦ أشهر.</div>
-              <div style="margin-top:12px;text-align:left">توقيع العميل: _______________________</div>
-            </div>
+          <div class="signature" role="region" aria-label="توقيع">
+            <div style="font-weight:800;color:var(--accent)">NeuraTalk — حلول الذكاء الاصطناعي</div>
+            <div style="font-size:13px;color:var(--muted);margin-top:6px">الاسم: عبادة · هاتف: +201274766610 · البريد: contact@neuratalk.com</div>
+            <div style="margin-top:10px">أوافق على كافة الشروط أعلاه وأرغب في الاشتراك لمدة ٦ أشهر.</div>
+            <div style="margin-top:12px;text-align:left">توقيع العميل: ____________________________</div>
           </div>
-
         </aside>
       </div>
 
